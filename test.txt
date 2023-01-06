@@ -1,0 +1,168 @@
+1.ans 
+
+			public class MaxMin {
+
+			public void max(int ma[]) {
+				for (int i = 0; i < ma.length; i++) {
+					for (int j = 0; j < ma.length; j++) {
+						int temp = 0;
+						if (ma[i] < ma[j]) {
+							temp = ma[i];
+							ma[i] = ma[j];
+							ma[j] = temp;
+						}
+					}
+				}
+				for (int m = 0; m < ma.length; m++) {}
+				System.out.println(" The max number  : " + ma[ma.length - 1]);
+			}
+
+			public void min(int ma[]) {
+				for (int i = 0; i < ma.length; i++) {
+					for (int j = 0; j < ma.length; j++) {
+						int temp = 0;
+						if (ma[i] < ma[j]) {
+							temp = ma[i];
+							ma[i] = ma[j];
+							ma[j] = temp;
+						}
+					}
+				}
+				for (int m = 0; m < ma.length; m++) {
+				}
+				System.out.println(" The min number  : " + ma[0]);
+			}
+			public static void main(String[] args) {
+				MaxMin mm = new MaxMin();
+				int ma[] = { 23, 45, 67, 78, 89, 324, 434, 434, 46, 34, 65, 57, 78, 900 };
+				mm.max(ma);
+				mm.min(ma);
+			}
+
+		}
+
+
+
+
+2.ans 
+
+		public class TimmySarah {
+
+			public static void main(String[] args) {
+				
+				int n =10;
+				int m=3;
+				
+				if(n %2 == 0 && m %2 == 0) {
+					System.out.println("Timmy and Sarah they are in love \n");
+				}
+				else
+					System.out.println("Timmy and Sarah they are not in love \\n");
+				
+			}
+
+		}
+
+
+3. ans 
+
+	 Genralized  class are sub classes 
+	 Specialized class are super classes
+	 
+4. Ans
+
+	a) declare a class as final
+	b)
+	c)  interface
+
+
+5.ans 
+	comparator
+	compareable
+	Collection.sort
+	
+6. ans
+	
+	linkedlist  
+	  * it is node based
+	  * manipulation is fast
+      *  it implements deque interface
+	  *  it store data in a linked node order
+	   
+     
+	 
+	 
+	arraylist
+	
+	 * it is index based
+	 *  manipulation is slow
+	 *  it implements list interface
+	 * it store   data in a insertion order
+	 
+	 
+7. ans
+      iterator
+	  * traverse elements present in Collection in the forward direction.
+	  * Helps to traverse Map, List and Set.
+	  * Indexes cannot be obtained by using Iterator
+	  * Certain methods of Iterator are next(), remove() and hasNext().
+	  
+	  listiterator
+	  * traverse elements present in Collection both in forward and backward directions.
+	  * traverse only List and not the other two.
+	  * It has methods like nextIndex() and previousIndex().
+	  *  Certain methods of ListIterator are next(), previous(), hasNext(), hasPrevious(), add(E e).
+	  
+8. ans 
+
+
+
+9. ans 
+
+
+10.ans 
+   static polymorphism:  multiple methods with the same name but different parameters in a same class is known as static polymorphism.
+        example:
+		  class Area{
+		  
+		   public void surface(int a, int b){
+		    system.out.println(a*b);
+			}
+			public void  surface(String name){
+			   system.out.println(name);
+			}
+			public void  surface (double u){
+			system.out.println(u/2);
+		  }
+		  public static void main(String args[]){
+		     Area a = new Area();
+			 a.surface(3 , 8);
+			 a.surface(manohara);
+			 a.surface(4.3);
+		  
+		  }
+   
+    dynamic polymorphism: If subclass has the same method as declared in the parent class with same parameters  is known as dynamic polymorphism
+	   example:
+	    class Vehicle{  
+				void run()
+				{
+				System.out.println("Vehicle is running");
+				}  
+			}  
+
+		class Bike extends Vehicle{  
+			public static void main(String args[])
+			{  
+              Bike obj = new Bike();  
+              obj.run();  
+            }  
+        }  
+	 
+11. ans
+
+  declare a class as private
+
+
+  
+	
